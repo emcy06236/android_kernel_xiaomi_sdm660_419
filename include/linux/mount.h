@@ -73,6 +73,10 @@ struct vfsmount {
 	ANDROID_KABI_RESERVE(2);
 	ANDROID_KABI_RESERVE(3);
 	ANDROID_KABI_RESERVE(4);
+	u64 android_kabi_reserved1;
+	u64 android_kabi_reserved2;
+	u64 android_kabi_reserved3;
+	u64 android_kabi_reserved4;
 	void *data;
 } __randomize_layout;
 

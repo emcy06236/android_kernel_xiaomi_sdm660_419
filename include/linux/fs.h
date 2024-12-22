@@ -732,6 +732,9 @@ struct inode {
 
 	ANDROID_KABI_RESERVE(1);
 	ANDROID_KABI_RESERVE(2);
+
+	u64 android_kabi_reserved1;
+	u64 android_kabi_reserved2;
 } __randomize_layout;
 
 static inline unsigned int i_blocksize(const struct inode *node)
@@ -1553,6 +1556,11 @@ struct super_block {
 	ANDROID_KABI_RESERVE(2);
 	ANDROID_KABI_RESERVE(3);
 	ANDROID_KABI_RESERVE(4);
+	
+	u64 android_kabi_reserved1;
+	u64 android_kabi_reserved2;
+	u64 android_kabi_reserved3;
+	u64 android_kabi_reserved4;
 } __randomize_layout;
 
 /* Helper functions so that in most cases filesystems will
